@@ -4,6 +4,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/"
+  ],
   "main": "./dist/cjs/theme.js",
   "types": "./dist/esm/theme.d.ts",
   "module": "./dist/esm/theme.js",
