@@ -5,5 +5,5 @@
 ## Quickstart
 
 ```shell
-▶ yarn add @indivno/theme
+▶ yarn add @indivorg/theme
 ```
