@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://www.github.com/indivorg/theme/compare/v1.0.2...v2.0.0) (2021-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* change to `@indivorg` organization
+
+### Features
+
+* change to `[@indivorg](https://www.github.com/indivorg)` organization ([9260229](https://www.github.com/indivorg/theme/commit/92602290db1f675351918bd874d06e9cdb3a4ad1))
+* move from `indivno` to `indivorg` ([#5](https://www.github.com/indivorg/theme/issues/5)) ([3ceda80](https://www.github.com/indivorg/theme/commit/3ceda8003464c3715ee0c0f600aeb2402fd2fa77))
+
 ### [1.0.2](https://www.github.com/indivorg/theme/compare/v1.0.1...v1.0.2) (2021-07-03)
 
 
