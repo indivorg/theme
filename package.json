@@ -1,5 +1,5 @@
 {
-  "name": "@indivno/theme",
+  "name": "@indivorg/theme",
   "version": "1.0.2",
   "publishConfig": {
     "access": "public"
