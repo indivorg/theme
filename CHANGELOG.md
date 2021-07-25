@@ -2,33 +2,35 @@
 
 ## [2.0.0](https://www.github.com/indivorg/theme/compare/v1.0.2...v2.0.0) (2021-07-18)
 
-
 ### ⚠ BREAKING CHANGES
 
-* change to `@indivorg` organization
+- change to `@indivorg` organization
 
 ### Features
 
-* change to `[@indivorg](https://www.github.com/indivorg)` organization ([9260229](https://www.github.com/indivorg/theme/commit/92602290db1f675351918bd874d06e9cdb3a4ad1))
-* move from `indivno` to `indivorg` ([#5](https://www.github.com/indivorg/theme/issues/5)) ([3ceda80](https://www.github.com/indivorg/theme/commit/3ceda8003464c3715ee0c0f600aeb2402fd2fa77))
+- change to `[@indivorg](https://www.github.com/indivorg)` organization
+  ([9260229](https://www.github.com/indivorg/theme/commit/92602290db1f675351918bd874d06e9cdb3a4ad1))
+- move from `indivno` to `indivorg`
+  ([#5](https://www.github.com/indivorg/theme/issues/5))
+  ([3ceda80](https://www.github.com/indivorg/theme/commit/3ceda8003464c3715ee0c0f600aeb2402fd2fa77))
 
 ### [1.0.2](https://www.github.com/indivorg/theme/compare/v1.0.1...v1.0.2) (2021-07-03)
 
-
 ### Bug Fixes
 
-* add missing files ([0549c7f](https://www.github.com/indivorg/theme/commit/0549c7f22d2ae622c39fb3790991a292c5127520))
+- add missing files
+  ([0549c7f](https://www.github.com/indivorg/theme/commit/0549c7f22d2ae622c39fb3790991a292c5127520))
 
 ### [1.0.1](https://www.github.com/indivorg/theme/compare/v1.0.0...v1.0.1) (2021-07-03)
 
-
 ### Bug Fixes
 
-* Add types ([deaa26d](https://www.github.com/indivorg/theme/commit/deaa26d4fdad12192e5a9e95fd34ed1b6b8674b6))
+- Add types
+  ([deaa26d](https://www.github.com/indivorg/theme/commit/deaa26d4fdad12192e5a9e95fd34ed1b6b8674b6))
 
 ## 1.0.0 (2021-07-02)
 
-
 ### Features
 
-* First commit ([f87fda2](https://www.github.com/indivorg/theme/commit/f87fda25177c72ceafaf08beb505483b6b7d9676))
+- First commit
+  ([f87fda2](https://www.github.com/indivorg/theme/commit/f87fda25177c72ceafaf08beb505483b6b7d9676))
