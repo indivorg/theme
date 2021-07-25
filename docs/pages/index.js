@@ -56,7 +56,7 @@ const DocsPage = () => (
       <Container>
         <Heading variant="headline">Text</Heading>
         <Card>
-          {Object.keys(theme.text).map(key => {
+          {Object.keys(theme.text).map((key) => {
             const Component = key.includes('head') ? Heading : Text;
             return (
               <Component key={key} variant={key} sx={{ mt: 0, mb: 3 }}>
@@ -82,7 +82,7 @@ const DocsPage = () => (
           </pre>
         </Card>
         <Heading variant="headline">Buttons</Heading>
-        {Object.keys(theme.buttons).map(key => (
+        {Object.keys(theme.buttons).map((key) => (
           <Button key={key} variant={key} sx={{ mr: 3, mb: 3 }}>
             {key} btn
           </Button>
@@ -149,7 +149,7 @@ const DocsPage = () => (
           />
         </Grid>
         <Heading variant="headline">Badges</Heading>
-        {Object.keys(theme.badges).map(key => (
+        {Object.keys(theme.badges).map((key) => (
           <Badge
             key={key}
             variant={key}
