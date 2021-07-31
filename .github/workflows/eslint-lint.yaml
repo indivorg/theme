@@ -1,0 +1,16 @@
+name: (Temporary) Lint check
+on:
+  pull_request:
+
+jobs:
+  lint-check:
+    runs-on: ubuntu-latest
+    if: github.head_ref == 'shared-eslint'
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          cache: 'yarn'
+      - run: yarn install
+      - run: yarn lint

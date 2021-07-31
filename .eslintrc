@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "@indivorg/eslint-config"
+  ]
+}
