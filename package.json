@@ -1,23 +1,23 @@
 {
   "name": "@indivorg/theme",
   "version": "2.0.0",
-  "publishConfig": {
-    "access": "public"
-  },
+  "repository": "github:indivorg/theme",
+  "license": "Apache-2.0",
+  "author": "Bjerk AS / Indiv AS",
+  "main": "./dist/cjs/theme.js",
+  "module": "./dist/esm/theme.js",
+  "source": "src/index.ts",
+  "types": "./dist/esm/theme.d.ts",
   "files": [
     "dist/"
   ],
-  "main": "./dist/cjs/theme.js",
-  "types": "./dist/esm/theme.d.ts",
-  "module": "./dist/esm/theme.js",
-  "source": "src/index.ts",
-  "author": "Bjerk AS / Indiv AS",
-  "license": "Apache-2.0",
-  "repository": "indivorg/theme",
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig-cjs.json"
+  },
   "devDependencies": {
     "typescript": "^4"
   },
-  "scripts": {
-    "build": "tsc && tsc -p tsconfig-cjs.json"
+  "publishConfig": {
+    "access": "public"
   }
 }
