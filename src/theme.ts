@@ -6,14 +6,6 @@ export const theme = {
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
-  layout: {
-    container: {
-      maxWidth: 'container', // ['container', null, 'container'],
-      width: '100%',
-      mx: 'auto',
-      px: 3,
-    },
-  },
   boxes: {
     form: {
       border: '2px solid',
@@ -24,12 +16,6 @@ export const theme = {
     },
   },
   cards: {
-    primary: {
-      color: 'text',
-      p: [3, 4],
-      borderRadius: 'normal',
-      overflow: 'hidden',
-    },
     secondary: {
       bg: 'muted',
       borderRadius: '5px',
@@ -42,6 +28,18 @@ export const theme = {
       '&:focus': {
         borderColor: 'secondary',
       },
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+    },
+    outline: {
+      '&:focus': {
+        borderColor: 'secondary',
+      },
+      bg: 'transparent',
+      border: '2px solid',
+      borderColor: 'white',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -250,7 +248,6 @@ export const theme = {
       fontSize: 0,
     },
     pre: {
-      background: 'secondary',
       fontFamily: 'monospace',
       code: {
         color: 'inherit',
@@ -277,5 +274,4 @@ export const theme = {
     },
   },
 };
-
 export default theme;
