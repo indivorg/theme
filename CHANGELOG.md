@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.1.0](https://www.github.com/indivorg/theme/compare/v2.0.0...v2.1.0) (2021-09-28)
+
+
+### Features
+
+* re-add removed code ([8e896dc](https://www.github.com/indivorg/theme/commit/8e896dcc0087b5cb37d26776a60f9a9ac6b114c1))
+* update theme with latest theme from indivorg/app ([b0ca63c](https://www.github.com/indivorg/theme/commit/b0ca63c3089abf84ca33b1c1f4293d341071f49d))
+
+
+### Bug Fixes
+
+* add linebreak ([a33c611](https://www.github.com/indivorg/theme/commit/a33c611c756e632a08a6c31e7ad922a799a2509c))
+
 ## [2.0.0](https://www.github.com/indivorg/theme/compare/v1.0.2...v2.0.0) (2021-07-18)
 
 ### ⚠ BREAKING CHANGES
