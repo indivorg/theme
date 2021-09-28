@@ -47,6 +47,18 @@ export const theme = {
       justifyContent: 'center',
       cursor: 'pointer',
     },
+    outline: {
+      '&:focus': {
+        borderColor: 'secondary',
+      },
+      bg: 'transparent',
+      border: '2px solid',
+      borderColor: 'white',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+    },
     small: {
       display: 'flex',
       alignItems: 'center',
