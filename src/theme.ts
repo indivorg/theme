@@ -58,7 +58,7 @@ export const theme = {
     heading: 1.125,
   },
   colors: {
-    text: '#000', // '#0A1026',
+    text: '#0A1026',
     background: '#fff',
     primary: '#004D3F',
     secondary: '#749F97',
