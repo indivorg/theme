@@ -3,8 +3,6 @@ import { buttons } from './button';
 import { layout } from './layout';
 import { styles } from './styles';
 
-export { webTheme } from './web/theme';
-
 export const theme = {
   sizes: {
     container: 1205,
@@ -115,5 +113,3 @@ export const theme = {
   layout,
   buttons,
 };
-
-export default theme;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import NextApp from 'next/app';
-import theme from '../src/theme';
+import { theme } from '../src/theme';
 import { ThemeProvider } from 'theme-ui';
 
 export default class App extends NextApp {
