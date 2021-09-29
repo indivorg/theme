@@ -9,6 +9,7 @@ export const theme = {
   },
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  radii: [0, 2, 4, 6, 8, 16, 32],
   fonts: {
     body: 'system-ui, -apple-system, "Public Sans", sans-serif',
     heading: 'inherit',
