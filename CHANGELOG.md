@@ -1,5 +1,28 @@
 # Changelog
 
+## [3.0.0](https://www.github.com/indivorg/theme/compare/v2.0.0...v3.0.0) (2021-09-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Improve buttons (#22)
+* Add webTheme (#18)
+* Better button styles and development environment for styling (#15)
+
+### Features
+
+* Add webTheme ([#18](https://www.github.com/indivorg/theme/issues/18)) ([478a034](https://www.github.com/indivorg/theme/commit/478a034d109653043aa6e1cf8d0486a366457677))
+* Better button styles and development environment for styling ([#15](https://www.github.com/indivorg/theme/issues/15)) ([99b6679](https://www.github.com/indivorg/theme/commit/99b6679a2ae6bf35c74ef49393430c46e0a77eb1))
+* Improve buttons ([#22](https://www.github.com/indivorg/theme/issues/22)) ([4e48d44](https://www.github.com/indivorg/theme/commit/4e48d44c2b686aa5e55fee4c463a37b114389227))
+* re-add removed code ([8e896dc](https://www.github.com/indivorg/theme/commit/8e896dcc0087b5cb37d26776a60f9a9ac6b114c1))
+* update theme with latest theme from indivorg/app ([b0ca63c](https://www.github.com/indivorg/theme/commit/b0ca63c3089abf84ca33b1c1f4293d341071f49d))
+
+
+### Bug Fixes
+
+* add correct text color ([e35b020](https://www.github.com/indivorg/theme/commit/e35b0202e017a5d10d7a93b0e62cbb7d7fa97b49))
+* add linebreak ([a33c611](https://www.github.com/indivorg/theme/commit/a33c611c756e632a08a6c31e7ad922a799a2509c))
+
 ## [2.0.0](https://www.github.com/indivorg/theme/compare/v1.0.2...v2.0.0) (2021-07-18)
 
 ### ⚠ BREAKING CHANGES
