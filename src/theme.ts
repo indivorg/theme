@@ -1,20 +1,18 @@
+import { alerts } from './alerts';
 import { buttons } from './button';
+import { layout } from './layout';
+import { styles } from './styles';
 
 export const theme = {
+  sizes: {
+    container: 1205,
+  },
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: 'system-ui, -apple-system, "Public Sans", sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace',
-  },
-  layout: {
-    container: {
-      maxWidth: 'container', // ['container', null, 'container'],
-      width: '100%',
-      mx: 'auto',
-      px: 3,
-    },
   },
   boxes: {
     form: {
@@ -39,14 +37,10 @@ export const theme = {
     },
   },
   fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 74],
-  buttons,
   containers: {
     small: {
       width: 705,
     },
-  },
-  sizes: {
-    container: 1205,
   },
   fontWeights: {
     body: 400,
@@ -75,36 +69,6 @@ export const theme = {
       lineHeight: 'heading',
       fontWeight: 'heading',
       color: 'primary',
-    },
-  },
-  alerts: {
-    success: {
-      color: 'text',
-      bg: 'lightGreen',
-      fontWeight: 'body',
-      p: 4,
-      borderRadius: '8px',
-    },
-    error: {
-      color: 'text',
-      bg: 'lightRed',
-      fontWeight: 'body',
-      p: 4,
-      borderRadius: '8px',
-    },
-    warning: {
-      color: 'text',
-      bg: 'accent',
-      fontWeight: 'body',
-      borderRadius: '8px',
-      p: 4,
-    },
-    muted: {
-      color: 'text',
-      bg: 'muted',
-      fontWeight: 'body',
-      p: 4,
-      borderRadius: '8px',
     },
   },
   forms: {
@@ -144,68 +108,10 @@ export const theme = {
       borderRadius: '50%',
     },
   },
-  styles: {
-    root: {
-      fontFamily: 'body',
-      lineHeight: 'body',
-      fontWeight: 'body',
-      a: { variant: 'styles.link' },
-    },
-    link: {
-      color: 'inherit',
-    },
-    h1: {
-      variant: 'text.heading',
-      color: 'primary',
-      fontSize: 6,
-    },
-    h2: {
-      variant: 'text.heading',
-      fontSize: 5,
-    },
-    h3: {
-      variant: 'text.heading',
-      fontSize: 3,
-    },
-    h4: {
-      variant: 'text.heading',
-      fontSize: 2,
-    },
-    h5: {
-      variant: 'text.heading',
-      fontSize: 1,
-    },
-    h6: {
-      variant: 'text.heading',
-      fontSize: 0,
-    },
-    pre: {
-      background: 'secondary',
-      fontFamily: 'monospace',
-      code: {
-        color: 'inherit',
-      },
-    },
-    code: {
-      fontFamily: 'monospace',
-      fontSize: 'inherit',
-    },
-    table: {
-      width: '100%',
-      borderSpacing: '0 15px',
-    },
-    th: {
-      borderBottomStyle: 'solid',
-    },
-    td: {
-      borderBottomStyle: 'solid',
-    },
-    hr: {
-      my: 4,
-      borderBottom: '2px dashed',
-      color: 'primary',
-    },
-  },
+  styles,
+  alerts,
+  layout,
+  buttons,
 };
 
 export default theme;
