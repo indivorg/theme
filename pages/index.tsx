@@ -26,7 +26,7 @@ import { HiArrowRight } from 'react-icons/hi';
 import { BaseStyles, ThemeProvider } from 'theme-ui';
 import { theme as baseTheme } from '../src';
 
-const Sheet: React.FC<{ theme: any, name: string }> = ({
+const Sheet: React.FC<{ theme: any; name: string }> = ({
   theme = baseTheme,
   name = 'Base',
 }) => {
@@ -53,7 +53,7 @@ const Sheet: React.FC<{ theme: any, name: string }> = ({
                 a: {
                   fontWeight: 'bold',
                   textDecoration: 'none',
-                }
+                },
               }}
             >
               <NavLink href="https://github.com/indivorg/theme">GitHub</NavLink>
@@ -65,7 +65,13 @@ const Sheet: React.FC<{ theme: any, name: string }> = ({
             </Grid>
           </Container>
         </Box>
-        <Box as="main" sx={{ bg: 'background', color: 'text' }}>
+        <Box
+          as="main"
+          sx={{
+            bg: 'background',
+            color: 'text'
+          }}
+        >
           <Container>
             <Heading variant="headline">Text</Heading>
             <Card>
