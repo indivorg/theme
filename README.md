@@ -14,5 +14,5 @@
 ▶ yarn dev
 ```
 
-This starts a Next.js instance. We've laid out all components from Theme UI, so
-you can easily stylize these with the theme (with hot reload etc.).
+The command above starts a Next.js instance. We've laid out all components from
+Theme UI, so you can easily stylize these with the theme (with hot reload etc.).
