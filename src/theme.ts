@@ -1,3 +1,5 @@
+import { buttons } from './button';
+
 export const theme = {
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
@@ -37,91 +39,7 @@ export const theme = {
     },
   },
   fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 74],
-  buttons: {
-    primary: {
-      '&:focus': {
-        borderColor: 'secondary',
-      },
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      cursor: 'pointer',
-    },
-    outline: {
-      '&:focus': {
-        borderColor: 'secondary',
-      },
-      bg: 'transparent',
-      border: '2px solid',
-      borderColor: 'white',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      cursor: 'pointer',
-    },
-    small: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: 1,
-      p: 2,
-      py: 1,
-    },
-    large: {
-      fontSize: 3,
-    },
-    link: {
-      display: 'inline',
-      outline: 'none',
-      cursor: 'pointer',
-      border: 0,
-      background: 'none',
-      color: 'inherit',
-      textDecoration: 'underline',
-      width: 'auto',
-      height: 'auto',
-      m: 0,
-      p: 0,
-    },
-    secondary: {
-      background: 'none',
-      borderColor: 'primary',
-      border: '2px solid',
-      color: 'primary',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      cursor: 'pointer',
-      backgroundColor: 'background',
-      borderRadius: '8px',
-    },
-    icon: {
-      background: 'none',
-      color: 'text',
-      display: 'flex',
-      alignItems: 'center',
-      cursor: 'pointer',
-      outline: 'none',
-    },
-    close: {
-      cursor: 'pointer',
-      outline: 'none',
-      ':active': {
-        opacity: 0.5,
-      },
-    },
-    empty: {
-      outline: 'none',
-      background: 'none',
-      border: 'none',
-    },
-    danger: {
-      backgroundColor: 'danger',
-      color: 'background',
-      borderRadius: '8px',
-      cursor: 'pointer',
-    },
-  },
+  buttons,
   containers: {
     small: {
       width: 705,

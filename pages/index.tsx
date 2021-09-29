@@ -1,5 +1,4 @@
 import {
-  BaseStyles,
   Badge,
   Box,
   Button,
@@ -11,24 +10,26 @@ import {
   Heading,
   Input,
   Label,
-  Link,
+  // Link,
   NavLink,
   Radio,
   Select,
   Slider,
   Text,
   Textarea,
-} from 'theme-ui';
+} from '@theme-ui/components';
+import { BaseStyles } from 'theme-ui';
 import Head from 'next/head';
-import theme from '@indivno/theme';
+import theme from '../src/theme';
 import { TypeScale, ColorPalette } from '@theme-ui/style-guide';
+import { HiArrowRight } from 'react-icons/hi';
 
 const DocsPage = () => (
-  <>
+  <Container sx={{ bg: 'muted' }}>
     <Head>
       <title>Indiv Theme</title>
     </Head>
-    <Box as="header" sx={{ bg: 'sheet', color: 'text' }}>
+    <Box as="header" sx={{ color: 'text' }}>
       <Container sx={{ pt: 5, pb: [3, 4] }}>
         <Heading as="h1" variant="title" color="primary">
           Indiv Theme
@@ -49,23 +50,20 @@ const DocsPage = () => (
         </Grid>
       </Container>
     </Box>
-    <Box
-      as="main"
-      sx={{ bg: 'background', color: 'text', py: 2, h2: { mt: 2 } }}
-    >
+    <Box as="main" sx={{ bg: 'background', color: 'text' }}>
       <Container>
         <Heading variant="headline">Text</Heading>
         <Card>
-          {Object.keys(theme.text).map((key) => {
+          {Object.keys(theme.text).map(key => {
             const Component = key.includes('head') ? Heading : Text;
             return (
-              <Component key={key} variant={key} sx={{ mt: 0, mb: 3 }}>
+              <Component key={key} variant={key}>
                 {key}
               </Component>
             );
           })}
         </Card>
-        <Card as={BaseStyles} sx={{ mt: [3, 4], p: { fontSize: 2 } }}>
+        <Card as={BaseStyles}>
           <p>
             This is a whole paragraph of text, include{' '}
             <code>code like this</code>, as well as{' '}
@@ -82,11 +80,30 @@ const DocsPage = () => (
           </pre>
         </Card>
         <Heading variant="headline">Buttons</Heading>
-        {Object.keys(theme.buttons).map((key) => (
-          <Button key={key} variant={key} sx={{ mr: 3, mb: 3 }}>
-            {key} btn
-          </Button>
-        ))}
+        <Card>
+          <Flex sx={{ flexWrap: 'wrap' }}>
+            {Object.keys(theme.buttons).map(key => (
+              <Box key={key}>
+                <Button variant={key} sx={{ mr: 3, mb: 3 }}>
+                  {key} btn
+                </Button>
+              </Box>
+            ))}
+          </Flex>
+        </Card>
+        <Heading variant="headline">Buttons with Icon</Heading>
+        <Card>
+          <Flex sx={{ flexWrap: 'wrap' }}>
+            {Object.keys(theme.buttons).map(key => (
+              <Box key={key}>
+                <Button variant={key} sx={{ mr: 3, mb: 3 }}>
+                  {key} btn
+                  <HiArrowRight />
+                </Button>
+              </Box>
+            ))}
+          </Flex>
+        </Card>
         <Heading variant="headline">Cards</Heading>
         {/* <Grid
           columns={[null, 2, 3]}
@@ -149,7 +166,7 @@ const DocsPage = () => (
           />
         </Grid>
         <Heading variant="headline">Badges</Heading>
-        {Object.keys(theme.badges).map((key) => (
+        {Object.keys(theme.badges).map(key => (
           <Badge
             key={key}
             variant={key}
@@ -169,7 +186,7 @@ const DocsPage = () => (
         </Text>
       </Container>
     </Box>
-  </>
+  </Container>
 );
 
 export default DocsPage;
