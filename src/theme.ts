@@ -46,6 +46,7 @@ export const theme = {
       alignItems: 'center',
       justifyContent: 'center',
       cursor: 'pointer',
+      gap: 2,
     },
     outline: {
       '&:focus': {

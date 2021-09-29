@@ -1,5 +1,4 @@
 import {
-  BaseStyles,
   Badge,
   Box,
   Button,
@@ -11,17 +10,19 @@ import {
   Heading,
   Input,
   Label,
-  Link,
+  // Link,
   NavLink,
   Radio,
   Select,
   Slider,
   Text,
   Textarea,
-} from 'theme-ui';
+} from '@theme-ui/components';
+import { BaseStyles } from 'theme-ui';
 import Head from 'next/head';
-import theme from '@indivno/theme';
+import theme from '../src/theme';
 import { TypeScale, ColorPalette } from '@theme-ui/style-guide';
+import { HiArrowRight } from 'react-icons/hi';
 
 const DocsPage = () => (
   <>
@@ -56,7 +57,7 @@ const DocsPage = () => (
       <Container>
         <Heading variant="headline">Text</Heading>
         <Card>
-          {Object.keys(theme.text).map((key) => {
+          {Object.keys(theme.text).map(key => {
             const Component = key.includes('head') ? Heading : Text;
             return (
               <Component key={key} variant={key} sx={{ mt: 0, mb: 3 }}>
@@ -82,11 +83,21 @@ const DocsPage = () => (
           </pre>
         </Card>
         <Heading variant="headline">Buttons</Heading>
-        {Object.keys(theme.buttons).map((key) => (
-          <Button key={key} variant={key} sx={{ mr: 3, mb: 3 }}>
-            {key} btn
-          </Button>
-        ))}
+        <Flex sx={{ flexWrap: 'wrap' }}>
+          {Object.keys(theme.buttons).map(key => (
+            <Box>
+              <Button key={key} variant={key} sx={{ mr: 3, mb: 3 }}>
+                {key} btn
+              </Button>
+            </Box>
+          ))}
+          <Box>
+            <Button sx={{ mr: 3, mb: 3 }}>
+              Hello
+              <HiArrowRight />
+            </Button>
+          </Box>
+        </Flex>
         <Heading variant="headline">Cards</Heading>
         {/* <Grid
           columns={[null, 2, 3]}
@@ -149,7 +160,7 @@ const DocsPage = () => (
           />
         </Grid>
         <Heading variant="headline">Badges</Heading>
-        {Object.keys(theme.badges).map((key) => (
+        {Object.keys(theme.badges).map(key => (
           <Badge
             key={key}
             variant={key}
