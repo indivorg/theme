@@ -113,5 +113,3 @@ export const theme = {
   layout,
   buttons,
 };
-
-export default theme;

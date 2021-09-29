@@ -20,20 +20,22 @@ import {
 } from '@theme-ui/components';
 import { BaseStyles, ThemeProvider } from 'theme-ui';
 import Head from 'next/head';
-import { theme } from '../src';
+import { webTheme } from '../src';
 import { TypeScale, ColorPalette } from '@theme-ui/style-guide';
 import { HiArrowRight } from 'react-icons/hi';
 
-const DocsPage = () => (
+const theme = webTheme;
+
+const WebThemePage = () => (
   <ThemeProvider theme={theme}>
     <Container sx={{ bg: 'muted' }}>
       <Head>
-        <title>Indiv Theme</title>
+        <title>Indiv Web Theme</title>
       </Head>
       <Box as="header" sx={{ color: 'text' }}>
         <Container sx={{ pt: 5, pb: [3, 4] }}>
           <Heading as="h1" variant="title" color="primary">
-            Indiv Theme
+            Indiv Web Theme
           </Heading>
           <Grid
             gap={4}
@@ -50,7 +52,9 @@ const DocsPage = () => (
             <NavLink href="https://npmjs.com/package/@indivno/theme">
               NPM
             </NavLink>
-            <NavLink href="/web">Web Theme</NavLink>
+            <NavLink href="/">
+              Base Theme
+            </NavLink>
           </Grid>
         </Container>
       </Box>
@@ -194,4 +198,4 @@ const DocsPage = () => (
   </ThemeProvider>
 );
 
-export default DocsPage;
+export default WebThemePage;
