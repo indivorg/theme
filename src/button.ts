@@ -43,11 +43,11 @@ export const buttons = {
   warn: {
     ...primaryButton,
     backgroundColor: 'warn',
-    color: 'background',
+    color: 'text',
   },
   danger: {
     ...primaryButton,
     backgroundColor: 'danger',
-    color: 'background',
+    color: 'text',
   },
 };
