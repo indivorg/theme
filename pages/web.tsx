@@ -18,11 +18,11 @@ import {
   Text,
   Textarea,
 } from '@theme-ui/components';
-import { BaseStyles, ThemeProvider } from 'theme-ui';
+import { ColorPalette, TypeScale } from '@theme-ui/style-guide';
 import Head from 'next/head';
-import { webTheme } from '../src';
-import { TypeScale, ColorPalette } from '@theme-ui/style-guide';
 import { HiArrowRight } from 'react-icons/hi';
+import { BaseStyles, ThemeProvider } from 'theme-ui';
+import { webTheme } from '../src';
 
 const theme = webTheme;
 
