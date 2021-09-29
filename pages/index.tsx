@@ -20,6 +20,7 @@ import {
 } from '@theme-ui/components';
 import { ColorPalette, TypeScale } from '@theme-ui/style-guide';
 import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 import { HiArrowRight } from 'react-icons/hi';
 import { BaseStyles, ThemeProvider } from 'theme-ui';
@@ -49,14 +50,18 @@ const Sheet: React.FC<{ theme: any, name: string }> = ({
                 fontSize: 2,
                 mt: 3,
                 mb: 2,
+                a: {
+                  fontWeight: 'bold',
+                  textDecoration: 'none',
+                }
               }}
             >
               <NavLink href="https://github.com/indivorg/theme">GitHub</NavLink>
               <NavLink href="https://npmjs.com/package/@indivno/theme">
                 NPM
               </NavLink>
-              <NavLink href="/">Base Theme</NavLink>
-              <NavLink href="/web">Web Theme</NavLink>
+              <Link href="/">Base Theme</Link>
+              <Link href="/web">Web Theme</Link>
             </Grid>
           </Container>
         </Box>
