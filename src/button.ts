@@ -2,6 +2,8 @@ const primaryButton = {
   '&:focus': {
     borderColor: 'secondary',
   },
+  backgroundColor: 'lightGreen',
+  color: 'text',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -15,8 +17,8 @@ export const buttons = {
   outline: {
     ...primaryButton,
     background: 'none',
+    borderColor: 'primary',
     border: '2px solid',
-    borderColor: 'white',
   },
   small: {
     ...primaryButton,
@@ -35,22 +37,17 @@ export const buttons = {
   },
   secondary: {
     ...primaryButton,
-    background: 'none',
-    borderColor: 'primary',
-    border: '2px solid',
-    color: 'primary',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    backgroundColor: 'background',
-    borderRadius: '8px',
+    backgroundColor: 'primary',
+    color: 'background',
+  },
+  warn: {
+    ...primaryButton,
+    backgroundColor: 'warn',
+    color: 'background',
   },
   danger: {
     ...primaryButton,
     backgroundColor: 'danger',
     color: 'background',
-    borderRadius: '8px',
-    cursor: 'pointer',
   },
 };

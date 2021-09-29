@@ -9,6 +9,7 @@ export const theme = {
   },
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  radii: [0, 2, 4, 6, 8, 16, 32],
   fonts: {
     body: 'system-ui, -apple-system, "Public Sans", sans-serif',
     heading: 'inherit',
@@ -58,10 +59,14 @@ export const theme = {
     secondary: '#749F97',
     accent: '#F9B644',
     muted: '#F0F4F3',
+    red: '#E96565',
     lightGray: '#F7FBFA',
     lightRed: '#FFC7C7',
     lightGreen: '#C5E7E0',
-    danger: '#E96565',
+    lightYellow: '#FFE3B4',
+    success: '#C5E7E0', // Same as lightGreen
+    warn: '#FFE3B4', // Same as lightYellow
+    danger: '#FFC7C7', // Same as lightRed
   },
   text: {
     heading: {
