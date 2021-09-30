@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.1.0](https://www.github.com/indivorg/theme/compare/v3.0.0...v3.1.0) (2021-09-30)
+
+
+### Features
+
+* Add antialiasing ([#25](https://www.github.com/indivorg/theme/issues/25)) ([9a2fa52](https://www.github.com/indivorg/theme/commit/9a2fa52d1ce900dbcadc02a476e6921d560d6bc8))
+
+
+### Bug Fixes
+
+* button text colors ([f1056b1](https://www.github.com/indivorg/theme/commit/f1056b1d8ea58effd32800a6467569a5bec841c7))
+* preview issues ([8d424d8](https://www.github.com/indivorg/theme/commit/8d424d82ef3d581bf62e077cbe170f3eb544c2b8))
+
 ## [3.0.0](https://www.github.com/indivorg/theme/compare/v2.0.0...v3.0.0) (2021-09-29)
 
 
