@@ -4,10 +4,10 @@
   "repository": "github:indivorg/theme",
   "license": "Apache-2.0",
   "author": "Bjerk AS / Indiv AS",
-  "main": "./dist/cjs/theme.js",
-  "module": "./dist/esm/theme.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
   "source": "src/index.ts",
-  "types": "./dist/esm/theme.d.ts",
+  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist/"
   ],
