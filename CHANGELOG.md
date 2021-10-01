@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.1.1](https://www.github.com/indivorg/theme/compare/v3.1.0...v3.1.1) (2021-10-01)
+
+
+### Bug Fixes
+
+* main file reference ([b033b68](https://www.github.com/indivorg/theme/commit/b033b6876e505152f70c43dd241e48573e6f466e))
+
 ## [3.1.0](https://www.github.com/indivorg/theme/compare/v3.0.0...v3.1.0) (2021-09-30)
 
 
