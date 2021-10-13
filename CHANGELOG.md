@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.2.0](https://www.github.com/indivorg/theme/compare/v3.1.1...v3.2.0) (2021-10-13)
+
+
+### Features
+
+* add unstyled button variant ([60a0f8c](https://www.github.com/indivorg/theme/commit/60a0f8cfc4b5836a5d0c34e3ba2a00d34d5a2135))
+
 ### [3.1.1](https://www.github.com/indivorg/theme/compare/v3.1.0...v3.1.1) (2021-10-01)
 
 
