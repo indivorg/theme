@@ -50,4 +50,13 @@ export const buttons = {
     backgroundColor: 'danger',
     color: 'text',
   },
+  unstyled: {
+    ...primaryButton,
+    color: 'inherit',
+    background: 'none',
+    textDecoration: 'none',
+    border: 0,
+    m: 0,
+    p: 0,
+  },
 };
