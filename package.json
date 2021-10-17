@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.theme.json && tsc -p tsconfig.theme.cjs.json",
+    "build:watch": "tsc --watch -p tsconfig.theme.json && tsc --watch -p tsconfig.theme.cjs.json",
     "dev": "next",
     "lint": "eslint .",
     "docs:build": "next build && next export"
@@ -36,6 +37,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "theme-ui": "^4.4.3"
   },
   "dependencies": {
     "ts-deepmerge": "^1.0.8"
