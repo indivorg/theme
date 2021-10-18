@@ -1,12 +1,19 @@
+import type { Theme, ThemeUIStyleObject } from 'theme-ui';
 import { alerts } from './alerts';
 import { buttons } from './button';
 import { colors } from './colors';
 import { layout } from './layout';
+import { links } from './links';
 import { styles } from './styles';
 
-export const theme = {
+export interface IndivTheme extends Theme {
+  label: ThemeUIStyleObject;
+}
+
+export const theme: IndivTheme = {
   sizes: {
     container: 1205,
+    readable: 770,
   },
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
@@ -15,15 +22,6 @@ export const theme = {
     body: 'system-ui, -apple-system, "Public Sans", sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace',
-  },
-  boxes: {
-    form: {
-      border: '2px solid',
-      borderColor: 'primary',
-      p: 3,
-      borderRadius: 8,
-      my: 3,
-    },
   },
   cards: {
     primary: {
@@ -39,11 +37,6 @@ export const theme = {
     },
   },
   fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 74],
-  containers: {
-    small: {
-      width: 705,
-    },
-  },
   fontWeights: {
     body: 400,
     heading: 700,
@@ -59,6 +52,14 @@ export const theme = {
       lineHeight: 'heading',
       fontWeight: 'heading',
       color: 'primary',
+      py: 3,
+    },
+    block: {
+      variant: 'paragraph',
+      my: 2,
+      textAlign: 'justify',
+      textAlignLast: 'start',
+      textJustify: 'auto',
     },
   },
   forms: {
@@ -103,4 +104,5 @@ export const theme = {
   alerts,
   layout,
   buttons,
+  links,
 };

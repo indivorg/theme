@@ -11,8 +11,8 @@ export const webTheme = merge(theme, {
   },
   styles: {
     root: {
-      '-webkit-font-smoothing': 'antialiased',
-      '-moz-osx-font-smoothing': 'grayscale',
+      WebkitFontSmoothing: 'antialiased',
+      MozOsxFontSmoothing: 'grayscale',
     },
   },
 });
