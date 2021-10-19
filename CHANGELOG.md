@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.0](https://www.github.com/indivorg/theme/compare/v3.2.0...v3.3.0) (2021-10-18)
+
+
+### Features
+
+* Add readable layout and misc. ([#30](https://www.github.com/indivorg/theme/issues/30)) ([bec020f](https://www.github.com/indivorg/theme/commit/bec020f31253b6fddfc76a54ef2208af8ab42926))
+
 ## [3.2.0](https://www.github.com/indivorg/theme/compare/v3.1.1...v3.2.0) (2021-10-13)
 
 
