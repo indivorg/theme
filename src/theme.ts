@@ -54,9 +54,11 @@ export const theme: IndivTheme = {
       color: 'primary',
       py: 3,
     },
+    paragraph: {
+      my: 2,
+    },
     block: {
       variant: 'paragraph',
-      my: 2,
       textAlign: 'justify',
       textAlignLast: 'start',
       textJustify: 'auto',
