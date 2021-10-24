@@ -5804,11 +5804,6 @@ trough@^1.0.0:
   resolved "https://registry.yarnpkg.com/trough/-/trough-1.0.5.tgz#b8b639cefad7d0bb2abd37d433ff8293efa5f406"
   integrity sha512-rvuRbTarPXmMb79SmzEp8aqXNKcK+y0XaB298IXueQ8I2PsrATcPBCSPyK/dDNa2iWOhKlfNnOjdAOTBU/nkFA==
 
-ts-deepmerge@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/ts-deepmerge/-/ts-deepmerge-1.0.8.tgz#927ebb0db106bdc4a15011c288a2024496638900"
-  integrity sha512-d3ZRKksHOOUQpLpB8qncIrcbRKGO/TWIC8hncD0QkEMAxTPq39hqRig0LM4fHnuZW3tWID/aNxjbAFW50IV3Lw==
-
 ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
