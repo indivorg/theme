@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.4.0](https://www.github.com/indivorg/theme/compare/v3.3.0...v3.4.0) (2021-10-24)
+
+
+### Features
+
+* Add margins on paragraphs ([#33](https://www.github.com/indivorg/theme/issues/33)) ([b714dd2](https://www.github.com/indivorg/theme/commit/b714dd2fb555e0c7db5fa508d305207fb2eefdca))
+* disable buttons style ([#36](https://www.github.com/indivorg/theme/issues/36)) ([4d3a0d8](https://www.github.com/indivorg/theme/commit/4d3a0d8dbf9ed5730cd747962aef17411c4dde40))
+
+
+### Bug Fixes
+
+* remove px ([#35](https://www.github.com/indivorg/theme/issues/35)) ([b41c2d0](https://www.github.com/indivorg/theme/commit/b41c2d0dc7c48bec47b6a601b050ade140211ece))
+
 ## [3.3.0](https://www.github.com/indivorg/theme/compare/v3.2.0...v3.3.0) (2021-10-18)
 
 
