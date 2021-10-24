@@ -1,4 +1,4 @@
-import type { Theme } from 'theme-ui';
+import { Theme, merge } from 'theme-ui';
 const primaryButton = {
   '&:focus': {
     borderColor: 'secondary',
@@ -19,6 +19,7 @@ export const buttons: Theme['buttons'] = {
     '&:disabled': {
       backgroundColor: 'secondary',
       color: 'primary',
+      cursor: 'default',
     },
   },
   outline: {
@@ -30,6 +31,7 @@ export const buttons: Theme['buttons'] = {
     '&:disabled': {
       borderColor: 'secondary',
       color: 'secondary',
+      cursor: 'default',
     },
   },
   small: {
@@ -40,6 +42,7 @@ export const buttons: Theme['buttons'] = {
     '&:disabled': {
       backgroundColor: 'lightGreen',
       color: 'secondary',
+      cursor: 'default',
     },
   },
   link: {
@@ -52,6 +55,7 @@ export const buttons: Theme['buttons'] = {
     p: 0,
     '&:disabled': {
       color: 'lightGreen',
+      cursor: 'default',
     },
   },
   secondary: {
@@ -61,6 +65,7 @@ export const buttons: Theme['buttons'] = {
     '&:disabled': {
       backgroundColor: 'lightGreen',
       color: 'secondary',
+      cursor: 'default',
     },
   },
   warn: {
@@ -70,6 +75,7 @@ export const buttons: Theme['buttons'] = {
     '&:disabled': {
       backgroundColor: 'lightYellow',
       color: 'secondary',
+      cursor: 'default',
     },
   },
   danger: {
@@ -79,6 +85,7 @@ export const buttons: Theme['buttons'] = {
     '&:disabled': {
       backgroundColor: 'lightRed',
       color: 'secondary',
+      cursor: 'default',
     },
   },
   unstyled: {
