@@ -18,6 +18,7 @@ export const theme: IndivTheme = {
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   radii: [0, 2, 4, 6, 8, 16, 32],
+  borderWidths: [0, 2],
   fonts: {
     body: 'system-ui, -apple-system, "Public Sans", sans-serif',
     heading: 'inherit',
@@ -32,7 +33,7 @@ export const theme: IndivTheme = {
     },
     secondary: {
       bg: 'muted',
-      borderRadius: '5px',
+      borderRadius: 3,
       p: 4,
     },
   },
@@ -80,7 +81,7 @@ export const theme: IndivTheme = {
     primary: {
       border: '3px solid',
       borderColor: 'secondary',
-      borderRadius: '8px',
+      borderRadius: 4,
       py: 1,
       px: 2,
       bg: 'primary',
@@ -89,7 +90,7 @@ export const theme: IndivTheme = {
     secondary: {
       border: '3px solid',
       borderColor: 'secondary',
-      borderRadius: '8px',
+      borderRadius: 4,
       py: 1,
       px: 2,
       bg: 'background',
