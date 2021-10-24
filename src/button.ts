@@ -1,8 +1,10 @@
-import { Theme, merge } from 'theme-ui';
+import { Theme } from 'theme-ui';
+const focusButton = {
+  borderColor: 'secondary',
+  backgroundColor: 'secondary',
+};
 const primaryButton = {
-  '&:focus': {
-    borderColor: 'secondary',
-  },
+  '&:focus': focusButton,
   backgroundColor: 'lightGreen',
   color: 'text',
   display: 'flex',
@@ -11,6 +13,8 @@ const primaryButton = {
   cursor: 'pointer',
   outline: 'none',
   gap: 2,
+  p: 3,
+  fontSize: 1,
 };
 
 export const buttons: Theme['buttons'] = {
@@ -72,6 +76,10 @@ export const buttons: Theme['buttons'] = {
     ...primaryButton,
     backgroundColor: 'warn',
     color: 'text',
+    '&:focus': {
+      ...focusButton,
+      backgroundColor: 'lightYellow',
+    },
     '&:disabled': {
       backgroundColor: 'lightYellow',
       color: 'secondary',
@@ -82,6 +90,10 @@ export const buttons: Theme['buttons'] = {
     ...primaryButton,
     backgroundColor: 'danger',
     color: 'text',
+    '&:focus': {
+      ...focusButton,
+      backgroundColor: 'red',
+    },
     '&:disabled': {
       backgroundColor: 'lightRed',
       color: 'secondary',
