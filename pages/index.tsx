@@ -70,10 +70,12 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
           sx={{
             bg: 'background',
             color: 'text',
+            borderRadius: 3,
+            py: 3,
           }}
         >
           <Container>
-            <Heading variant="headline">Text</Heading>
+            <Heading>Text</Heading>
             <Card>
               {Object.keys(theme.text).map(key => {
                 const Component = key.includes('head') ? Heading : Text;
@@ -100,7 +102,7 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                 <code>Here’s a code block! No highlighting to be found.</code>
               </pre>
             </Card>
-            <Heading variant="headline">Buttons</Heading>
+            <Heading>Buttons</Heading>
             <Card>
               <Flex sx={{ flexWrap: 'wrap' }}>
                 {Object.keys(theme.buttons).map(key => (
@@ -112,7 +114,7 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                 ))}
               </Flex>
             </Card>
-            <Heading variant="headline">Buttons with Icon</Heading>
+            <Heading>Buttons with Icon</Heading>
             <Card>
               <Flex sx={{ flexWrap: 'wrap' }}>
                 {Object.keys(theme.buttons).map(key => (
@@ -125,7 +127,7 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                 ))}
               </Flex>
             </Card>
-            <Heading variant="headline">Disabled Buttons</Heading>
+            <Heading>Disabled Buttons</Heading>
             <Card>
               <Flex sx={{ flexWrap: 'wrap' }}>
                 {Object.keys(theme.buttons).map(key => (
@@ -137,19 +139,19 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                 ))}
               </Flex>
             </Card>
-            <Heading variant="headline">Cards</Heading>
+            {/* <Heading>Cards</Heading> */}
             {/* <Grid
-          columns={[null, 2, 3]}
-          gap={3}
-          sx={{ code: { mt: 1, ml: -1, fontSize: 0 } }}
-        >
-          {Object.keys(theme.cards).map(key => (
-            <Card variant={key} key={key} p={[3, 4]}>
-              {key}
-            </Card>
-          ))}
-        </Grid>
-        <Heading variant="headline">Forms</Heading> */}
+                  columns={[null, 2, 3]}
+                  gap={3}
+                  sx={{ code: { mt: 1, ml: -1, fontSize: 0 } }}
+                >
+                  {Object.keys(theme.cards).map(key => (
+                    <Card variant={key} key={key} p={[3, 4]}>
+                      {key}
+                    </Card>
+                  ))}
+                </Grid> */}
+            <Heading>Forms</Heading>
             <Grid gap={3} columns={[null, 2]} as="form" variant="cards.sunken">
               <Label>
                 Full name
@@ -198,7 +200,7 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                 sx={{ gridColumn: [null, 'span 2'] }}
               />
             </Grid>
-            <Heading variant="headline">Badges</Heading>
+            <Heading>Badges</Heading>
             {Object.keys(theme.badges).map(key => (
               <Badge
                 key={key}
@@ -209,7 +211,7 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                 {key}
               </Badge>
             ))}
-            <Heading variant="headline">Colors</Heading>
+            <Heading>Colors</Heading>
             <ColorPalette
               omit={[
                 'modes',
