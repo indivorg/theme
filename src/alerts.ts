@@ -4,20 +4,20 @@ export const alerts = {
     bg: 'lightGreen',
     fontWeight: 'body',
     p: 4,
-    borderRadius: '8px',
+    borderRadius: 4,
   },
   error: {
     color: 'text',
     bg: 'lightRed',
     fontWeight: 'body',
     p: 4,
-    borderRadius: '8px',
+    borderRadius: 4,
   },
   warning: {
     color: 'text',
     bg: 'accent',
     fontWeight: 'body',
-    borderRadius: '8px',
+    borderRadius: 4,
     p: 4,
   },
   muted: {
@@ -25,6 +25,6 @@ export const alerts = {
     bg: 'muted',
     fontWeight: 'body',
     p: 4,
-    borderRadius: '8px',
+    borderRadius: 4,
   },
 };

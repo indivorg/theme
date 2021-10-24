@@ -1,4 +1,5 @@
-export const styles = {
+import type { Theme } from 'theme-ui';
+export const styles: Theme['styles'] = {
   root: {
     fontFamily: 'body',
     lineHeight: 'body',
@@ -56,7 +57,8 @@ export const styles = {
   },
   hr: {
     my: 4,
-    borderBottom: '2px dashed',
+    borderWidth: 2,
+    borderStyle: 'dashed',
     color: 'primary',
   },
 };

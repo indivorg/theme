@@ -1,3 +1,4 @@
+import type { Theme } from 'theme-ui';
 const primaryButton = {
   '&:focus': {
     borderColor: 'secondary',
@@ -12,13 +13,14 @@ const primaryButton = {
   gap: 2,
 };
 
-export const buttons = {
+export const buttons: Theme['buttons'] = {
   primary: primaryButton,
   outline: {
     ...primaryButton,
     background: 'none',
     borderColor: 'primary',
-    border: '2px solid',
+    borderWidth: 2,
+    borderStyle: 'solid',
   },
   small: {
     ...primaryButton,
