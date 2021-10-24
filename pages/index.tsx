@@ -69,7 +69,7 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
           as="main"
           sx={{
             bg: 'background',
-            color: 'text'
+            color: 'text',
           }}
         >
           <Container>
@@ -120,6 +120,18 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
                     <Button variant={key} sx={{ mr: 3, mb: 3 }}>
                       {key} btn
                       <HiArrowRight />
+                    </Button>
+                  </Box>
+                ))}
+              </Flex>
+            </Card>
+            <Heading variant="headline">Disabled Buttons</Heading>
+            <Card>
+              <Flex sx={{ flexWrap: 'wrap' }}>
+                {Object.keys(theme.buttons).map(key => (
+                  <Box key={key}>
+                    <Button variant={key} sx={{ mr: 3, mb: 3 }} disabled>
+                      {key} btn
                     </Button>
                   </Box>
                 ))}
