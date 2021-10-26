@@ -13,7 +13,7 @@ const primaryButton = {
   cursor: 'pointer',
   outline: 'none',
   gap: 2,
-  p: 3,
+  p: [2, 3],
   fontSize: 1,
 };
 
