@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://www.github.com/indivorg/theme/compare/v3.4.0...v3.5.0) (2021-10-26)
+
+
+### Features
+
+* Improve button styles ([#38](https://www.github.com/indivorg/theme/issues/38)) ([6c71fb1](https://www.github.com/indivorg/theme/commit/6c71fb15b3bf52eed05ae7e5f7ec0e1e514293e5))
+
 ## [3.4.0](https://www.github.com/indivorg/theme/compare/v3.3.0...v3.4.0) (2021-10-24)
 
 
