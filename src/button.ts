@@ -43,8 +43,7 @@ export const buttons: Theme['buttons'] = {
   },
   small: {
     ...primaryButton,
-    fontSize: 1,
-    p: 2,
+    px: 2,
     py: 1,
     '&:disabled': {
       backgroundColor: 'lightGreen',
