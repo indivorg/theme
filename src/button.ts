@@ -1,8 +1,10 @@
 import { Theme } from 'theme-ui';
+
 const focusButton = {
   borderColor: 'secondary',
   backgroundColor: 'secondary',
 };
+
 const primaryButton = {
   '&:focus': focusButton,
   backgroundColor: 'lightGreen',
@@ -13,7 +15,8 @@ const primaryButton = {
   cursor: 'pointer',
   outline: 'none',
   gap: 2,
-  p: [2, 3],
+  px: [2, 3],
+  py: 2,
   fontSize: 1,
 };
 
