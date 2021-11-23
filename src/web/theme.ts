@@ -13,6 +13,7 @@ export const webTheme = merge(theme, {
     root: {
       WebkitFontSmoothing: 'antialiased',
       MozOsxFontSmoothing: 'grayscale',
+      overflowY: 'scroll',
     },
   },
 });
