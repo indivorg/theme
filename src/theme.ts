@@ -39,6 +39,7 @@ export const theme: IndivTheme = {
   },
   fontSizes: [12, 14, 16, 18, 20, 24, 32, 48, 64, 74],
   fontWeights: {
+    light: 300,
     body: 400,
     heading: 700,
     bold: 700,
@@ -48,13 +49,37 @@ export const theme: IndivTheme = {
     heading: 1.125,
   },
   text: {
-    heading: {
-      fontFamily: 'heading',
+    headline: {
       lineHeight: 'heading',
       fontWeight: 'heading',
-      color: 'primary',
+      fontSize: 9,
       py: 3,
     },
+    heading: {
+      lineHeight: 'heading',
+      fontWeight: 'light',
+      fontSize: 7,
+      py: 3,
+    },
+    smallHeadline: {
+      lineHeight: 'heading',
+      fontWeight: 'heading',
+      fontSize: 6,
+      py: 2,
+    },
+    tinyHeading: {
+      lineHeight: 'heading',
+      fontWeight: 'light',
+      fontSize: 4,
+      py: 2,
+    },
+    tinyHeadline: {
+      lineHeight: 'heading',
+      fontWeight: 'heading',
+      fontSize: 3,
+      py: 2,
+    },
+
     paragraph: {
       my: 2,
     },

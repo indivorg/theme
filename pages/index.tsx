@@ -25,8 +25,9 @@ import React from 'react';
 import { HiArrowRight } from 'react-icons/hi';
 import { BaseStyles, ThemeProvider } from 'theme-ui';
 import { theme as baseTheme } from '../src';
+import { IndivTheme } from '../src/theme';
 
-const Sheet: React.FC<{ theme: any; name: string }> = ({
+const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
   theme = baseTheme,
   name = 'Base',
 }) => {
@@ -78,11 +79,17 @@ const Sheet: React.FC<{ theme: any; name: string }> = ({
             <Heading>Text</Heading>
             <Card>
               {Object.keys(theme.text).map(key => {
-                const Component = key.includes('head') ? Heading : Text;
+                const Component = key.toLowerCase().includes('head')
+                  ? Heading
+                  : Text;
                 return (
-                  <Component key={key} variant={key}>
-                    {key}
-                  </Component>
+                  <Box key={key} sx={{ my: 2 }}>
+                    <Text>{key}</Text>
+                    <br />
+                    <Component variant={key}>
+                      {'All of which are American dreams'}
+                    </Component>
+                  </Box>
                 );
               })}
             </Card>
