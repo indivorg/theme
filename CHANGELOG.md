@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.6.0](https://www.github.com/indivorg/theme/compare/v3.5.0...v3.6.0) (2021-11-24)
+
+
+### Features
+
+* implement new heading styles ([e26f5ad](https://www.github.com/indivorg/theme/commit/e26f5ad0c64e834c78ccf12694f89868048b4541))
+* rework unstyled variant to not look like button ([611e87b](https://www.github.com/indivorg/theme/commit/611e87bdb42f5a098ec0cd379a66123898bbf2e4))
+
 ## [3.5.0](https://www.github.com/indivorg/theme/compare/v3.4.0...v3.5.0) (2021-10-26)
 
 
