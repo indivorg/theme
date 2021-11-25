@@ -57,8 +57,8 @@ export const styles: Theme['styles'] = {
   },
   hr: {
     my: 4,
-    border: '1px solid',
-    borderWidth: '1px',
+    border: 'olid',
+    borderWidth: 2,
     color: 'lightGreen',
   },
 };
