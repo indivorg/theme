@@ -57,7 +57,7 @@ export const styles: Theme['styles'] = {
   },
   hr: {
     my: 4,
-    border: 'solid',
+    borderStyle: 'solid',
     borderWidth: 2,
     color: 'lightGreen',
   },
