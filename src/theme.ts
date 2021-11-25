@@ -109,8 +109,9 @@ export const theme: IndivTheme = {
       borderRadius: 4,
       py: 1,
       px: 2,
-      bg: 'primary',
-      color: 'background',
+      bg: 'lightGreen',
+      color: 'text',
+      fontWeight: 'body',
     },
     secondary: {
       border: '3px solid',
@@ -120,6 +121,7 @@ export const theme: IndivTheme = {
       px: 2,
       bg: 'background',
       color: 'primary',
+      fontWeight: 'body',
     },
   },
   images: {
