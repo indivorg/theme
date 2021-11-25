@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.7.0](https://www.github.com/indivorg/theme/compare/v3.6.0...v3.7.0) (2021-11-25)
+
+
+### Features
+
+* add dividers to theme samples ([713b7ee](https://www.github.com/indivorg/theme/commit/713b7ee47e01059a529d956eef696009bc374db4))
+* implement new badge style ([5279940](https://www.github.com/indivorg/theme/commit/5279940e2c5207c94fd41e22e9041ef43fb2765b))
+* implement new divider style ([9ede1b6](https://www.github.com/indivorg/theme/commit/9ede1b67262181605a262baf8674e591f1f95461))
+
+
+### Bug Fixes
+
+* remove px values ([f31dec8](https://www.github.com/indivorg/theme/commit/f31dec88c72fc5100fece5a1e4321c7eecd21439))
+* set borderStyle instead of border ([4f66e5e](https://www.github.com/indivorg/theme/commit/4f66e5e316028e4bb1860f7fa2cf685617081ff8))
+* typo ([5beae5e](https://www.github.com/indivorg/theme/commit/5beae5e7c3e96ce8ebec9c998f16be914c78e14e))
+* update with new design ([cd686bc](https://www.github.com/indivorg/theme/commit/cd686bc8094054d865364d2eee6c4bca6ff2d298))
+
 ## [3.6.0](https://www.github.com/indivorg/theme/compare/v3.5.0...v3.6.0) (2021-11-24)
 
 
