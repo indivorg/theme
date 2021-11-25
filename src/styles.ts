@@ -58,7 +58,7 @@ export const styles: Theme['styles'] = {
   hr: {
     my: 4,
     border: '1px solid',
-    boxShadow: '0px 4px 4px rgba(0,0,0,0.25)',
-    color: 'muted',
+    borderWidth: '1px',
+    color: 'lightGreen',
   },
 };
