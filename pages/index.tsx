@@ -5,6 +5,7 @@ import {
   Card,
   Checkbox,
   Container,
+  Divider,
   Flex,
   Grid,
   Heading,
@@ -109,6 +110,7 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                 <code>Here’s a code block! No highlighting to be found.</code>
               </pre>
             </Card>
+            <Divider />
             <Heading>Buttons</Heading>
             <Card>
               <Flex sx={{ flexWrap: 'wrap' }}>
@@ -158,6 +160,7 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                     </Card>
                   ))}
                 </Grid> */}
+            <Divider />
             <Heading>Forms</Heading>
             <Grid gap={3} columns={[null, 2]} as="form" variant="cards.sunken">
               <Label>
@@ -207,6 +210,8 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                 sx={{ gridColumn: [null, 'span 2'] }}
               />
             </Grid>
+
+            <Divider />
             <Heading>Badges</Heading>
             {Object.keys(theme.badges).map(key => (
               <Badge
@@ -218,6 +223,7 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                 {key}
               </Badge>
             ))}
+            <Divider />
             <Heading>Colors</Heading>
             <ColorPalette
               omit={[
@@ -229,6 +235,7 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
               ]}
             />
             <TypeScale />
+            <Divider />
             <Text as="pre" variant="styles.pre">
               {JSON.stringify(theme, null, 2)}
             </Text>
