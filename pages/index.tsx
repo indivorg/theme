@@ -24,77 +24,69 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
 import { HiArrowRight } from 'react-icons/hi';
+import type { Theme } from 'theme-ui';
 import { BaseStyles, ThemeProvider } from 'theme-ui';
-import { theme as baseTheme } from '../src';
-import { IndivTheme } from '../src/theme';
+import { theme as baseTheme } from '../src/theme';
+import { scaleAsArray } from '../src/utils';
 
-const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
+const Sheet: React.FC<{ theme: Theme; name: string }> = ({
   theme = baseTheme,
   name = 'Base',
 }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={{ bg: 'muted' }}>
+      <Container>
         <Head>
-          <title>Indiv Theme</title>
+          <title>Bjerk Theme</title>
         </Head>
-        <Box as="header" sx={{ color: 'text' }}>
-          <Container sx={{ pt: 5, pb: [3, 4] }}>
-            <Heading as="h1" variant="title" color="primary">
-              Indiv {name} Theme
-            </Heading>
-            <Grid
-              gap={4}
-              columns="auto auto auto auto"
-              sx={{
-                alignItems: 'center',
-                justifyContent: 'flex-start',
-                fontSize: 2,
-                mt: 3,
-                mb: 2,
-                a: {
-                  fontWeight: 'bold',
-                  textDecoration: 'none',
-                },
-              }}
-            >
-              <NavLink href="https://github.com/indivorg/theme">GitHub</NavLink>
-              <NavLink href="https://npmjs.com/package/@indivno/theme">
-                NPM
-              </NavLink>
-              <Link href="/">Base Theme</Link>
-              <Link href="/web">Web Theme</Link>
-            </Grid>
-          </Container>
-        </Box>
-        <Box
-          as="main"
-          sx={{
-            bg: 'background',
-            color: 'text',
-            borderRadius: 3,
-            py: 3,
-          }}
-        >
-          <Container>
-            <Heading>Text</Heading>
-            <Card>
+        <Flex as="main" sx={{ gap: 4, flexDirection: 'column' }}>
+          <Box as="header" sx={{ color: 'text' }}>
+            <Container>
+              <Heading as="h1" variant="title" sx={{ py: 4 }}>
+                Indiv {name} Theme
+              </Heading>
+              <Flex sx={{ gap: 3, alignItems: 'center' }}>
+                <NavLink href="https://github.com/indivorg/theme">
+                  GitHub
+                </NavLink>
+                <NavLink href="https://npmjs.com/package/@indivorg/theme">
+                  NPM
+                </NavLink>
+                <Link href="/">Base Theme</Link>
+                <Link href="/web">Web Theme</Link>
+              </Flex>
+            </Container>
+          </Box>
+          <Card>
+            <Heading>Text styles</Heading>
+            <Grid gap={4}>
               {Object.keys(theme.text).map(key => {
                 const Component = key.toLowerCase().includes('head')
                   ? Heading
                   : Text;
                 return (
-                  <Box key={key} sx={{ my: 2 }}>
-                    <Text>{key}</Text>
-                    <br />
+                  <Flex
+                    key={key}
+                    sx={{
+                      gap: 3,
+                      flexDirection: 'column',
+                    }}
+                  >
+                    <Text sx={{ color: 'secondary' }}>{key}</Text>
                     <Component variant={key}>
-                      {'All of which are American dreams'}
+                      {
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet neque ultricies, mollis leo quis, luctus magna.'
+                      }
                     </Component>
-                  </Box>
+                    <Divider />
+                  </Flex>
                 );
               })}
-            </Card>
-            <Card as={BaseStyles}>
+            </Grid>
+          </Card>
+          <Card>
+            <Heading>Base styles</Heading>
+            <Box as={BaseStyles}>
               <p>
                 This is a whole paragraph of text, include{' '}
                 <code>code like this</code>, as well as{' '}
@@ -109,66 +101,61 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
               <pre>
                 <code>Here’s a code block! No highlighting to be found.</code>
               </pre>
-            </Card>
-            <Divider />
+            </Box>
+          </Card>
+          <Card>
             <Heading>Buttons</Heading>
-            <Card>
-              <Flex sx={{ flexWrap: 'wrap' }}>
-                {Object.keys(theme.buttons).map(key => (
-                  <Box key={key}>
-                    <Button variant={key} sx={{ mr: 3, mb: 3 }}>
-                      {key} btn
-                    </Button>
-                  </Box>
-                ))}
-              </Flex>
-            </Card>
+            <Flex sx={{ flexWrap: 'wrap', gap: 3 }}>
+              {Object.keys(theme.buttons).map(key => (
+                <Button key={key} variant={key}>
+                  {key} btn
+                </Button>
+              ))}
+            </Flex>
+          </Card>
+          <Card>
             <Heading>Buttons with Icon</Heading>
-            <Card>
-              <Flex sx={{ flexWrap: 'wrap' }}>
-                {Object.keys(theme.buttons).map(key => (
-                  <Box key={key}>
-                    <Button variant={key} sx={{ mr: 3, mb: 3 }}>
-                      {key} btn
-                      <HiArrowRight />
-                    </Button>
-                  </Box>
-                ))}
-              </Flex>
-            </Card>
+            <Flex sx={{ flexWrap: 'wrap', gap: 3 }}>
+              {Object.keys(theme.buttons).map(key => (
+                <Button key={key} variant={key}>
+                  {key} btn
+                  <HiArrowRight />
+                </Button>
+              ))}
+            </Flex>
+          </Card>
+          <Card>
             <Heading>Disabled Buttons</Heading>
-            <Card>
-              <Flex sx={{ flexWrap: 'wrap' }}>
-                {Object.keys(theme.buttons).map(key => (
-                  <Box key={key}>
-                    <Button variant={key} sx={{ mr: 3, mb: 3 }} disabled>
-                      {key} btn
-                    </Button>
-                  </Box>
-                ))}
-              </Flex>
-            </Card>
-            {/* <Heading>Cards</Heading> */}
-            {/* <Grid
-                  columns={[null, 2, 3]}
-                  gap={3}
-                  sx={{ code: { mt: 1, ml: -1, fontSize: 0 } }}
-                >
-                  {Object.keys(theme.cards).map(key => (
-                    <Card variant={key} key={key} p={[3, 4]}>
-                      {key}
-                    </Card>
-                  ))}
-                </Grid> */}
-            <Divider />
+            <Flex sx={{ flexWrap: 'wrap', gap: 3 }}>
+              {Object.keys(theme.buttons).map(key => (
+                <Button key={key} variant={key} disabled>
+                  {key} btn
+                </Button>
+              ))}
+            </Flex>
+          </Card>
+
+          <Card>
+            <Heading>Spacing</Heading>
+            <Flex sx={{ flexWrap: 'wrap', gap: 4 }}>
+              {scaleAsArray(theme.space).map((s, key) => (
+                <Box key={key} sx={{ textAlign: 'center' }}>
+                  {key}
+                  <Box key={s} sx={{ width: s, height: s, bg: 'text' }} />
+                  {s}
+                </Box>
+              ))}
+            </Flex>
+          </Card>
+          <Card>
             <Heading>Forms</Heading>
-            <Grid gap={3} columns={[null, 2]} as="form" variant="cards.sunken">
+            <Grid gap={3} columns={[null, 2]} as="form">
               <Label>
                 Full name
                 <Input placeholder="Zach Latta" />
               </Label>
               <Label>
-                How are you primarily associated with Indiv?
+                How are you primarily associated with Bjerk?
                 <Select>
                   <option value="" disabled hidden>
                     Select one…
@@ -176,7 +163,7 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                   <option value="club-leader">I lead a club</option>
                   <option value="club-member">I am a club member</option>
                   <option value="slack-member">I am active on Slack</option>
-                  <option value="alum">I am a Indiv alum</option>
+                  <option value="alum">I am a Bjerk alum</option>
                   <option value="none">None of the above</option>
                 </Select>
               </Label>
@@ -210,8 +197,9 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                 sx={{ gridColumn: [null, 'span 2'] }}
               />
             </Grid>
+          </Card>
 
-            <Divider />
+          <Card>
             <Heading>Badges</Heading>
             {Object.keys(theme.badges).map(key => (
               <Badge
@@ -223,7 +211,8 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                 {key}
               </Badge>
             ))}
-            <Divider />
+          </Card>
+          <Card>
             <Heading>Colors</Heading>
             <ColorPalette
               omit={[
@@ -234,13 +223,18 @@ const Sheet: React.FC<{ theme: IndivTheme; name: string }> = ({
                 'facebook',
               ]}
             />
+          </Card>
+          <Card>
+            <Heading>Type scale</Heading>
             <TypeScale />
-            <Divider />
+          </Card>
+          <Card>
+            <Heading>Theme Object</Heading>
             <Text as="pre" variant="styles.pre">
               {JSON.stringify(theme, null, 2)}
             </Text>
-          </Container>
-        </Box>
+          </Card>
+        </Flex>
       </Container>
     </ThemeProvider>
   );
