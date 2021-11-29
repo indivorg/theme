@@ -37,13 +37,13 @@ const Sheet: React.FC<{ theme: Theme; name: string }> = ({
     <ThemeProvider theme={theme}>
       <Container>
         <Head>
-          <title>Bjerk Theme</title>
+          <title>Indiv Theme</title>
         </Head>
         <Flex as="main" sx={{ gap: 4, flexDirection: 'column' }}>
           <Box as="header" sx={{ color: 'text' }}>
             <Container>
               <Heading as="h1" variant="title" sx={{ py: 4 }}>
-                Bjerk {name} Theme
+                Indiv {name} Theme
               </Heading>
               <Flex sx={{ gap: 3, alignItems: 'center' }}>
                 <NavLink href="https://github.com/indivorg/theme">
@@ -155,7 +155,7 @@ const Sheet: React.FC<{ theme: Theme; name: string }> = ({
                 <Input placeholder="Zach Latta" />
               </Label>
               <Label>
-                How are you primarily associated with Bjerk?
+                How are you primarily associated with Indiv?
                 <Select>
                   <option value="" disabled hidden>
                     Select one…
@@ -163,7 +163,7 @@ const Sheet: React.FC<{ theme: Theme; name: string }> = ({
                   <option value="club-leader">I lead a club</option>
                   <option value="club-member">I am a club member</option>
                   <option value="slack-member">I am active on Slack</option>
-                  <option value="alum">I am a Bjerk alum</option>
+                  <option value="alum">I am a Indiv alum</option>
                   <option value="none">None of the above</option>
                 </Select>
               </Label>
