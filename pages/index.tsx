@@ -43,7 +43,7 @@ const Sheet: React.FC<{ theme: Theme; name: string }> = ({
           <Box as="header" sx={{ color: 'text' }}>
             <Container>
               <Heading as="h1" variant="title" sx={{ py: 4 }}>
-                Indiv {name} Theme
+                Bjerk {name} Theme
               </Heading>
               <Flex sx={{ gap: 3, alignItems: 'center' }}>
                 <NavLink href="https://github.com/indivorg/theme">
