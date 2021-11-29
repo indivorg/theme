@@ -102,4 +102,7 @@ export const buttons: Theme['buttons'] = {
       cursor: 'default',
     },
   },
+  icon: {
+    mouse: 'cursor',
+  },
 };
