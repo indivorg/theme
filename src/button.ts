@@ -103,6 +103,6 @@ export const buttons: Theme['buttons'] = {
     },
   },
   icon: {
-    mouse: 'cursor',
+    cursor: 'pointer',
   },
 };
