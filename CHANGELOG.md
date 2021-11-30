@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://www.github.com/indivorg/theme/compare/v3.7.0...v4.0.0) (2021-11-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove unstyled button (#53)
+
+### Code Refactoring
+
+* Remove unstyled button ([#53](https://www.github.com/indivorg/theme/issues/53)) ([d3cb750](https://www.github.com/indivorg/theme/commit/d3cb7506605042891b6db5b8ce409a1b00b74518))
+
 ## [3.7.0](https://www.github.com/indivorg/theme/compare/v3.6.0...v3.7.0) (2021-11-25)
 
 
