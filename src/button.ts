@@ -102,18 +102,7 @@ export const buttons: Theme['buttons'] = {
       cursor: 'default',
     },
   },
-  unstyled: {
-    background: 'none',
-    textDecoration: 'none',
-    color: 'inherit',
-    display: 'flex',
-    alignItems: 'center',
+  icon: {
     cursor: 'pointer',
-    px: 0,
-    py: 0,
-    m: 0,
-    mr: 0,
-    gap: 2,
-    fontSize: 5,
   },
 };
