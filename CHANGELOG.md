@@ -1,5 +1,12 @@
 # Changelog
 
+### [4.0.1](https://www.github.com/indivorg/theme/compare/v4.0.0...v4.0.1) (2023-05-14)
+
+
+### Bug Fixes
+
+* horizontal line should only be 1px in height ([#55](https://www.github.com/indivorg/theme/issues/55)) ([4bb1ecd](https://www.github.com/indivorg/theme/commit/4bb1ecd06695768f1f44c46d12d73af6b3f098a6))
+
 ## [4.0.0](https://www.github.com/indivorg/theme/compare/v3.7.0...v4.0.0) (2021-11-30)
 
 
